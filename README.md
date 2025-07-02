@@ -1,89 +1,123 @@
-# 🧠 Week 4 Assignment: AI in Software Engineering  
+# Group43 Week 4 Assignment
 
-## Theme: Building Intelligent Software Solutions 💻🤖
+This repository contains Jupyter Notebooks and code for various practical tasks and experiments conducted as part of the Group43 Week 4 Assignment. The focus areas include Python sorting algorithms, AI-assisted code, data analysis, and Selenium test automation.
 
-## 🎯 Objective
+---
 
-This assignment evaluates your understanding of AI applications in software engineering through:
+## Table of Contents
 
-- ✅ Theoretical analysis
-- ✅ Practical implementation
-- ✅ Ethical reflection
+- [Task 1: Sorting Algorithms](#task-1-sorting-algorithms)
+- [Task 2: Data Analysis with Pandas and Scikit-learn](#task-2-data-analysis-with-pandas-and-scikit-learn)
+- [Task 3: Web Automation with Selenium IDE](#task-3-web-automation-with-selenium-ide)
+- [Getting Started](#getting-started)
+- [Requirements](#requirements)
+- [How to Run](#how-to-run)
+- [Contributing](#contributing)
+- [License](#license)
 
-You will demonstrate how AI can:
+---
 
-- Automate coding and testing
-- Improve software development efficiency
-- Raise and resolve ethical concerns
+## Task 1: Sorting Algorithms ([Task1.ipynb](Task1.ipynb))
 
-## ✅ Task Overview
+This notebook explores two approaches to sorting a list of dictionaries by a specified key:
 
-### 🔹 Part 1: Theoretical Analysis (30%)
+1. **Manual Bubble Sort Implementation**  
+   - Implements a bubble sort algorithm to sort a list of dictionaries.
+   - Does not use built-in sorting or AI tools.
+   - Useful for understanding basic sorting logic and algorithm efficiency.
 
-#### Short Answer Questions
+2. **AI-Generated Sorting (Using Built-in Functions)**  
+   - Uses Python’s `sorted()` function with a lambda for key selection.
+   - Demonstrates how AI/code completion tools can generate more efficient solutions.
 
-1. Explain how AI-driven code generation tools (e.g., GitHub Copilot) reduce development time. What are their limitations?
-2. Compare supervised vs. unsupervised learning in the context of automated bug detection.
-3. Why is bias mitigation critical in AI-driven UX personalization?
+3. **Efficiency Comparison**  
+   - Benchmarks both methods using the `time` module.
+   - Analyzes performance differences between manual and built-in approaches.
 
-#### Case Study Analysis  
+---
 
-- Read the article: AI in DevOps - Automating Deployment Pipelines  
-- Reflect: How does AIOps improve deployment efficiency? Give two examples.
+## Task 2: Data Analysis with Pandas and Scikit-learn ([week4.ipynb](week4.ipynb))
 
-### 🔹 Part 2: Practical Implementation (60%)
+This notebook focuses on basic data science and exploratory data analysis tasks:
 
-#### Task 1: AI-Powered Code Completion  
+- Loads a dataset (569 rows, 31 columns).
+- Displays the first 5 rows for a quick preview.
+- Explores features such as mean radius, texture, perimeter, area, and more.
+- Intended as a starting point for deeper analysis or machine learning tasks.
 
-- 🛠️ Tool: GitHub Copilot / Tabnine  
-- Write a Python function to sort a list of dictionaries by key.  
-- Compare AI-suggested vs manual code.  
-- Deliverables:
-  - Code files: `sort_dicts_ai.py`, `sort_dicts_manual.py`
-  - 200-word analysis in `report.pdf`
+---
 
-#### Task 2: Automated Testing with AI  
+## Task 3: Web Automation with Selenium IDE ([seleniumIDE.ipynb](seleniumIDE.ipynb))
 
-- 🧪 Framework: Selenium IDE + AI Plugins or Testim.io  
-- Automate login test for valid/invalid credentials  
-- Deliverables:
-  - Test file: `login_test_case.testim`
-  - Screenshot: `login_test_results.png`
-  - 150-word summary in `report.pdf`
+This notebook demonstrates automated web UI testing using Selenium:
 
-Task 3: Predictive Analytics for Resource Allocation  
+- **Test Target**: [the-internet.herokuapp.com/login](https://the-internet.herokuapp.com/login)
+- **Features**:
+  - Automates login attempts with valid and invalid credentials.
+  - Captures screenshots for each test.
+  - Asserts expected outcomes (success or error messages).
+  - Uses headless Chrome for efficient test execution.
+- **Use Cases**:
+  - Demonstrates basics of browser automation for QA.
+  - Shows how to validate login flows and error handling.
 
-- 📊 Dataset: [Kaggle Breast Cancer Dataset](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data)  
-- Preprocess data (clean, label, split).
+---
 
--Train a model (e.g., Random Forest) to predict issue priority (high/medium/low).
+## Getting Started
 
--Evaluate using accuracy and F1-score.`
+Clone this repository:
 
-### 🔹 Part 3: Ethical Reflection (10%)
+```bash
+git clone https://github.com/Ar-murithi/Group43_wk4_Assignment.git
+cd Group43_wk4_Assignment
+```
 
-1. Prompt: Your predictive model is deployed in a company.  
-2. Discuss: Potential dataset biases (e.g., underrepresented teams) and How fairness tools (e.g., IBM AI Fairness 360) can help.
+---
 
-### 🔹 Bonus Task: Innovation Challenge (Extra 10%)
+## Requirements
 
-- Propose an AI tool to solve a software engineering problem not covered in class  
-- Example: Automated documentation generation  
-- Deliverable: `Innovation_challenge_proposal.md`
+- Python 3.7+
+- Jupyter Notebook
+- pandas, scikit-learn
+- selenium
+- Chrome browser and ChromeDriver (for Selenium tasks)
+- IPython (for display functions in Selenium notebook)
 
-## 🛠 Tools & Resources
+Install requirements (recommended in a virtual environment):
 
-- AI Tools: GitHub Copilot, Testim.io, Google Colab  
-- Datasets: Kaggle, GitHub Issues  
-- Libraries: Scikit-learn, Pandas, Selenium  
+```bash
+pip install -r requirements.txt
+```
+*Note: If `requirements.txt` is missing, install packages individually as shown above.*
 
-## 💼 Why This Matters
+---
 
-- Career Relevance: Mastery of tools like Copilot and Selenium is in high demand across tech roles  
-- Ethical Awareness: Prepare to build AI-driven software that’s fair, transparent, and inclusive
-  
-## 📅 Submission Guidelines
+## How to Run
 
-- Code: Share this GitHub repo (well-commented scripts/notebooks)
-- Report: Upload PDF with answers, screenshots, reflections on the Community platform
-- Presentation: Share a 3-minute demo video in your class Group for peer review
+1. Launch Jupyter Notebook:
+
+   ```bash
+   jupyter notebook
+   ```
+
+2. Open the desired notebook (`Task1.ipynb`, `week4.ipynb`, or `seleniumIDE.ipynb`) and run the cells.
+
+---
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and open a pull request with your proposed changes.
+
+---
+
+## License
+
+This repository is for educational purposes. See the LICENSE file for details (if available).
+
+---
+
+## More Information
+
+For details on each notebook, consult the inline documentation and comments within each `.ipynb` file.
+
+---
